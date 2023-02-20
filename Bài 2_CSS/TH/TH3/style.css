@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.header {
+    background-color: gray;
+    height: 160px;
+    text-align: center;
+    padding: 30px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content > h2 {
+    text-align: center;
+}
+
+.content .list-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card-item {
+    width: calc(100%/3);
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+.card-item .avatar {
+    width: 100%;
+    text-align: center;
+}
+
+.list-card .card-item img {
+    width: 100%;
+}
+
+.card-item .desc {
+    padding: 10px 20px;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
