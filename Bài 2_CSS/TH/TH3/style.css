@@ -62,4 +62,5 @@ button {
     height: 30px;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
