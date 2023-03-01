@@ -5,4 +5,7 @@ function findMaxValue(x, y){
         return y;
 }
 
-console.log("Số lớn hơn: " ,findMaxValue(5, 20));
+let x = 5;
+let y= 20;
+console.log("x =", x, " y = ", y)
+console.log("Số lớn hơn: " ,findMaxValue(x,y));
