@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f273bcc8b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <div class="d-flex" id="container">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-heading py-3 fs-6 border-bottom pe-5">
+          <i class="fa-solid fa-bars ms-4 mx-2"></i> Admin
+        </div>
+
+        <div class="sidebar-heading py-3 fs-6 border-bottom pe-5">
+          <i class="fa-solid fa-user ms-4 mx-2"></i> Nguyễn Đẩu Nghĩa
+        </div>
+        <div class="list-group list-group-flush mx-2 my-3">
+            <div class="input-group mb-3 mt-3">
+                <input type="text" class="form-control bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="input-group-text bg-transparent" id="basic-addon2"><i class="text-light fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            <a href="" class="list-group-item active fw-bold dropdown-toggle px-2"><i class="fa-solid fa-house ms-1 me-2"></i>Trang chủ</a>
+            <div class="dropdown my-3 bg-transparent">
+                <a class="btn btn-secondary dropdown-toggle bg-transparent text-start" style="width: 100%" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="me-2 fa-solid fa-list"></i>Danh sách sản phẩm
+                </a>
+              
+                <ul class="dropdown-menu bg-transparent" aria-labelledby="dropdownMenuLink" style="width: 100%;border:none;">
+                  <li class="ms-3 text-light"><input type="radio">
+                        <label for="">Danh sách</label>
+                </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+      <!-- sidebar -->
+
+      <!-- content -->
+      <div class="content col position-relative">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fa-solid fa-list"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="border-0 bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </nav>
+      <div class="row">
+        <div class="col d-flex justify-content-between ms-2">
+          <h2>Trang chủ</h2>
+          <a href="" class="text-decoration-none mt-3">Trang chủ</a>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col ms-2">
+            <div class="row mt-4">
+                <div class="col-3">
+                    <div class="card order">
+                       <h3 class="p-3">150</h3>
+                       <h5 class="ps-3">New orders</h5>
+                        <button class="mt-4 infor-order">More infor<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card rate">
+                       <h3 class="p-3">53%</h3>
+                       <h5 class="ps-3">Bounce Rate</h5>
+                        <button class="mt-4 infor-rate">More infor<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card user">
+                       <h3 class="p-3">44</h3>
+                       <h5 class="ps-3">User Registrations</h5>
+                        <button class="mt-4 infor-user">More infor<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card unique">
+                       <h3 class="p-3">65</h3>
+                       <h5 class="ps-3">Unique Visitor</h5>
+                        <button class="mt-4 infor-unique">More infor<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row footer">
+          <div class="col">
+            <p>Copy right 2022</p>
+        </div>
+        </div>
+      </div>
+
+      <!-- content -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

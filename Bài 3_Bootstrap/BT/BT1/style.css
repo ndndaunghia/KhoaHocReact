@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.order{
+    background-color: rgb(30, 30, 236);
+    color: white;
+}
+.infor-order {
+    background-color: blue;
+    border: none;
+    outline: none;
+}
+
+.rate {
+    background-color: rgb(20, 175, 20);
+    color: white;
+}
+
+.infor-rate {
+    background-color: green;
+    border: none;
+    outline: none;
+}
+
+.user {
+    background-color: rgb(224, 224, 45);
+    color: white;
+}
+
+.infor-user {
+    background-color: rgb(199, 199, 39);
+    border: none;
+    outline: none;
+}
+
+.unique {
+    background-color: rgb(230, 44, 44);
+    color: white;
+}
+
+.infor-unique {
+    background-color: rgb(150, 12, 12);
+    border: none;
+    outline: none;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.container {
+    height: 100vh;
+}
+
+
+.sidebar {
+    background-color: #292828;
+    color: white;
+    height: 100vh;
+}
+
+.nav-link {
+    padding-left: 10px;
+}
+
+.form-check-label {
+    color:white;
+}
