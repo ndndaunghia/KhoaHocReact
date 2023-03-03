@@ -1,0 +1,11 @@
+const todoList =   document.querySelector("ul");
+const newTodo = document.createElement("li");
+const anotherTodo = document.createElement("li");
+const modifiedTodo = document.createElement("li");
+newTodo.textContent = 'Do homework';
+anotherTodo.textContent = 'Pay bills';
+modifiedTodo.textContent = 'Feed the dogs';
+todoList.appendChild(newTodo);
+todoList.insertBefore(anotherTodo,todoList.children[3]);
+todoList.replaceChild(modifiedTodo, todoList.children[1]);
+todoList.children[0].remove();
