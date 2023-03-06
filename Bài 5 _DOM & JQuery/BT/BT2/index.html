@@ -12,24 +12,30 @@
         width: 267px;
         height: 38px;
         border: 1px solid black;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .output > p {
+      padding: 6px;
     }
 </style>
 <body>
-    <div class="container">
-        <h3>Nhập thông tin khoản vay</h3>
+    <div class="container mt-4">
+        <h3 class="mb-4">Nhập thông tin khoản vay</h3>
        <form action="">
         <div class="row g-3 align-items-center mb-3">
             <div class="col-3">
-              <label for="money" class="col-form-label">1, Số tiền</label>
+              <label for="loan" class="col-form-label">1, Số tiền</label>
             </div>
             <div class="col-3">
-              <input type="text" id="money" class="form-control money">
+              <input type="text" id="loan" class="form-control loan">
             </div>
             
           </div>
           <div class="row g-3 align-items-center mb-3">
             <div class="col-3">
-              <label for="interest" class="col-form-label">2, Lãi suất hằng năm</label>
+              <label for="interest" class="col-form-label">2, Lãi suất hằng năm (%)</label>
             </div>
             <div class="col-3">
               <input type="text" id="interest" class="form-control interest">
@@ -38,22 +44,22 @@
           </div>
           <div class="row g-3 align-items-center">
             <div class="col-3">
-              <label for="time" class="col-form-label">3, Thời gian trả(năm)</label>
+              <label for="time" class="col-form-label">3, Thời gian trả (năm)</label>
             </div>
             <div class="col-3">
               <input type="text" id="time" class="form-control time">
             </div>
           </div>
-          <button type="button" class="btn btn-dark mt-3 mb-3">Tính</button>
-          <h3>Thông tin thanh toán</h3>
+          <button type="button" class="btn btn-secondary mt-4 mb-4">Tính</button>
+          <h3 class="mb-4">Thông tin thanh toán</h3>
           <div class="row g-3 align-items-center mb-3">
             <div class="col-3">
               <label for="inputPassword6" class="col-form-label">4, Số tiền phải trả hàng tháng</label>
             </div>
             <div class="col-3">
-              <!-- <input type="text" id="inputText1" class="form-control"> -->
+              <!-- <input type="text" id="output1" class="form-control"> -->
               <div class="output">
-                <h5 class="output1"></h5>
+                <p id="output1"></p>
               </div>
             </div>
           </div>
@@ -63,7 +69,7 @@
             </div>
             <div class="col-3">
                 <div class="output">
-                    <h5 class="output2"></h5>
+                    <p id="output2"></p>
                   </div>
             </div>
           </div>
@@ -73,7 +79,7 @@
             </div>
             <div class="col-3">
                 <div class="output">
-                    <h5 class="output3"></h5>
+                    <p id="output3"></p>
                   </div>
             </div>
           </div>
