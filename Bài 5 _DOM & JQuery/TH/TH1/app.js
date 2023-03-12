@@ -17,6 +17,7 @@
             input.value = "";
             save.innerHTML = "Add";
             console.log("Index hàm save: " ,globalIndex);
+            globalIndex = null;
             render();
           }
           else{
