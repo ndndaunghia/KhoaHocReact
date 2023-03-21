@@ -1,37 +1,56 @@
-class Product {
-    constructor(name, price, amount){
+class User {
+    constructor(name, username, password){
         this.name = name;
-        this.price = price;
-        this.amount = amount;
+        this.username = username;
+        this.password = password;
     }
 
-    addProduct(extraQuantity){
-        this.amount += extraQuantity;
+    login(username, password){
+        if(username == this.username && password == this.password)
+            console.log("Login successfully");
+        else    
+            console.log("Authentication Failed!!");
+    }
+
+    setPassword(newpassword){
+        this.password = newpassword;
+    }
+
+    validateUsernameOrPassword(text){
+        if (text.length > 6) {
+            return true;
+        }
+        return false;
+    }
+}   
+
+class Author extends User {
+    constructor(name, username, password, email, numOfPost){
+        super(name, username, password);
+        this.email = email;
+        this.numOfPost = 0;
+    }
+    
+    createPost() {
+        this.numOfPost++;
+    }
+
+    getNumOfPost() {
+        return this.numOfPost;
     }
 }
 
-class Customer{
-    constructor(name, quantityOfProducts){
-        this.name = name;
-        this.quantityOfProducts = quantityOfProducts;
-    }
+console.log("---Khởi tạo user 1---");
+let user1 = new User("user1", "user1", "abcde")
+console.log(user1);
 
-    buyProduct(product, quantity){
-        if(product.amount > quantity){
-            product.amount -= quantity;
-        }
-        else {
-            console.log('Out of product');
-            return;
-        }
-    }
-}
+console.log("---Đổi mật khẩu user1---");
+user1.setPassword("1234");
+console.log(user1);
 
-let shirt = new Product('shirt', 300000, 20);
-shirt.addProduct(10);
-console.log(shirt.amount, 'Amount product');
+console.log("---Kiểm tra mật khẩu có hợp lệ hay không---");
+console.log(user1.validateUsernameOrPassword(user1.password));
 
-let customer1 = new Customer('customer1', 0);
-customer1.buyProduct(shirt, 4);
-console.log(customer1.quantityOfProducts, 'Quantity of product customer');
-console.log(shirt.amount, 'Amount product after customer buy');
+console.log("---Khởi tạo author1---");
+let author1 = new Author('ex@gmail.com', 'author1', 'author1', '1234567')
+console.log(author1);
