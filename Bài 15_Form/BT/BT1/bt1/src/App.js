@@ -28,7 +28,7 @@ function App() {
     console.log(data);
   };
   return (
-    <form className="form" onSubmit={handleSubmit(onSubmit, registerOption)}>
+    <form className="form" onSubmit={handleSubmit(onSubmit)}>
       <div className="d-flex">
         <div className="col-5">
           <div className="mb-3">
