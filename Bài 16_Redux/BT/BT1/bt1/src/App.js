@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react'
-import Admin from './Admin';
+import Danhba from './Danhba';
 
 function App() {
- return(
-  <Admin/>
- )
+  return (
+   <Danhba/>
+  );
 }
 
 export default App;
